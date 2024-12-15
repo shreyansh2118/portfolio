@@ -558,7 +558,7 @@ ul li {
     
     .profile-card {
         left: 10px;
-        width: 82%;  /* Take full width */
+        width: 72%;  /* Take full width */
         position: relative;  /* Remove fixed positioning */
         margin-top: 10px;  /* Normal margin */
         height: auto;  /* Let it grow based on content */
