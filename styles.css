@@ -409,11 +409,16 @@ ul li {
     width: 30px;
     height: 30px;
 }
+.contact-card div {
+    font-size: 15px;  /* Adjust the font size as needed */
+    /* color: #000;      */
+}
 
 .contact-card strong {
     display: block;
     font-size: 16px;
 }
+
 
 .contact-card a {
     text-decoration: none;
@@ -547,7 +552,27 @@ ul li {
     color: #f7f5f5; /* Optional: Change text color */
   }
 
+  /* Responsive */
   @media (max-width: 768px) {
+
+    .contact-card {
+        background-color: #1E1E1E;
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        display: flex;
+        align-items: start;
+        gap: 15px;
+        border: 1px solid #333;
+        text-decoration: none;
+        color: white;
+    }
+    .contact-card div {
+        font-size: 14px;  /* Adjust the font size as needed */
+        /* color: #000;      */
+    }
+    
+
     #typing-animation {
         font-size: 30px; /* Increases the text size */
         line-height: 1.5; /* Adjusts the space between lines */
