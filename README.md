@@ -7,5 +7,5 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 - **About Me**: A section where I share my background, education, and career journey.
 - **Projects**: A collection of software and hardware projects I have worked on, including detailed descriptions, technologies used, and links to repositories.
-- **Skills**: A summary of my technical skills, including programming languages and tools like C++, Flutter, Dart, Python, Firebase, and more.
+- **Skills**: A summary of my technical skills, including programming languages and tools like Data analysis, Excel, Power Bi, Sql, C++, Flutter, Python, Firebase, and more.
 - **Contact**: A section with contact information and links to my social media profiles and GitHub.
