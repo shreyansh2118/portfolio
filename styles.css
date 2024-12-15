@@ -43,7 +43,6 @@ body {
     padding: 20px;
     margin-top: 40px;
     background-color: #1e1e1e;
-    padding: 20px;
     border-radius: 26px;
     text-align: center;
     width: 290px;
@@ -566,7 +565,16 @@ ul li {
   }
 
   @media (max-width: 768px) {
+    #typing-animation {
+        font-size: 30px; /* Increases the text size */
+        line-height: 1.5; /* Adjusts the space between lines */
+        height: 50px; /* Sets a specific height for the container */
+        display: inline-block; /* Ensures the container fits the text */
+        color: #f7f5f5; /* Optional: Change text color */
+      }
+    
     .profile-card {
+        left: 10px;
         width: 82%;  /* Take full width */
         position: relative;  /* Remove fixed positioning */
         margin-top: 10px;  /* Normal margin */
@@ -575,7 +583,7 @@ ul li {
         overflow-y: auto;  /* Allow scrolling when content overflows */
         margin-left: 0;  /* Align to the left */
     }
-
+  
     .container {
         flex-direction: column; /* Stack content vertically */
         overflow-y: auto; /* Ensure the container itself can scroll */
@@ -611,6 +619,7 @@ ul li {
 }
 
 @media (max-width: 480px) {
+ 
     .profile-card {
         width: 100%;  /* Use full width */
         position: relative;
