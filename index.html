@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyansh Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Profile Card -->
+        <div class="profile-card">
+            <h2>Shreyansh</h2>
+            <img src="images/mydp.png" alt="Shafana" class="profile-img">
+            <p>Data Analyst</p>
+            <p class="email">shreyansh2118tiwari@gmail.com</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shreyansh-t/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/shreyansh2118" class="github"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/shreyansh2118" class="github"><i class="fa fa-play"></i></a>
+            </div>
+            <!-- Download Resume Button -->
+            <!-- Download Resume Button -->
+            <a href="https://drive.google.com/uc?export=download&id=1Lrk_GdlcJDAcTPgKrGRtTvCEyx6hhdfT"
+                class="download-btn" target="_blank">Download Resume</a>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div id="home" class="main-section">
+                <h1><span class="hello">Hello</span><br><span class="highlight">I am</span> Shreyansh.</h1>
+
+                <!-- Element to contain animated typing -->
+                <span id="typing-animation"></span>
+
+
+                <script>
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                    // Array of texts to display
+                    const typingTexts = ['An App Developer  ', 'A learner  ', 'A Data Analyst   ', 'An Engineer   '];
+                    let currentIndex = 0; // Index of the currently displayed text
+                    let charIndex = 0;    // Index of the current character in the text
+
+                    function playTypingAnimation() {
+                        // Get the current text
+                        const currentText = typingTexts[currentIndex];
+
+                        // Add the next character to the animation element
+                        if (charIndex < currentText.length) {
+                            typingAnimationElement.textContent += currentText[charIndex];
+                            charIndex++;
+                            setTimeout(playTypingAnimation, 200); // Adjust typing speed
+                        } else {
+                            // Pause before clearing and moving to the next text
+                            setTimeout(() => {
+                                typingAnimationElement.textContent = '';
+                                charIndex = 0;
+                                currentIndex = (currentIndex + 1) % typingTexts.length; // Move to the next text
+                                playTypingAnimation();
+                            }, 1000); // Pause duration after completing a text
+                        }
+                    }
+
+                    // Start the typing animation
+                    playTypingAnimation();
+                </script>
+
+
+                <div class="stats">
+
+                    <div class="stat-item">
+                        <img src="images/excel.png" alt="Excel" style="width: 80px;">
+                        <h2>1</h2>
+                        <p>Excel Project</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <img src="images/power.png" alt="PowerBI">
+                        <h2>2</h2>
+                        <p>PowerBI Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <img src="images/sql.png" alt="SQL">
+                        <h2>1</h2>
+                        <p>SQL Project</p>
+                    </div>
+                    <div class="stat-item">
+                        <img src="images/flutter.png" alt="flutter" style="width: 80px;">
+                        <h2>3</h2>
+                        <p>Flutter Projects</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" class="about-section">
+                <br>
+                <h1>About <span class="highlight">Me</span></h1>
+                <p>Hi, I’m <span class="highlight">Shreyansh Tiwari</span>, a tech enthusiast with a passion for
+                    crafting impactful solutions through software development and data analytics. With experience in
+                    Flutter development and data analysis, I bridge the gap between code and insights.</p> <br>
+
+                <h2>Why Choose Me? 🚀</h2>
+                <p>I specialize in building efficient, user-centric software applications and transforming raw data into
+                    meaningful insights. My experience spans software development, embedded systems, and data analytics,
+                    allowing me to tackle challenges from multiple angles.</p> <br>
+
+                <h2>Internship Highlights 💼</h2>
+                <ul>
+                    <li><strong>Investobull Fintech:</strong> Worked as a Flutter Developer Intern for 7 months, where I
+                        contributed to feature development, bug fixes, and enhancing user experiences.</li>
+                    <li><strong>Nullclass Pvt Ltd:</strong> Currently working as a Data Analyst Intern, leveraging SQL,
+                        Power BI, and Excel to analyze datasets, optimize reports, and support strategic
+                        decision-making.</li> <br>
+                    <!-- <li><strong>Telecom Company:</strong> Gained hands-on knowledge of telecommunications systems, including the operations of communication towers.</li> -->
+                </ul>
+
+                <h2>Let’s Connect! 🔍</h2>
+                <p>I’m driven by opportunities where technology meets real-world challenges. Feel free to explore my
+                    portfolio and projects to see how I turn ideas into impactful solutions. Let's connect and create
+                    something amazing together!</p> <br> <br>
+
+                <h2>Thank You for Visiting! 🙌</h2>
+            </div>
+
+
+            <!-- Key Skills Section -->
+            <div id="skills" class="skills-section">
+                <h1>Key <span class="highlight">Skills</span></h1>
+                <div class="skills-container">
+                    <div class="skill-box">SQL</div>
+                    <div class="skill-box">Data Analysis</div>
+                    <div class="skill-box">Problem Solving</div>
+                    <div class="skill-box">Communication</div>
+                    <div class="skill-box">Power BI</div>
+                    <div class="skill-box">Excel</div>
+                    <div class="skill-box">Data Visualization</div>
+                    <div class="skill-box">Python</div>
+                    <div class="skill-box">Flutter</div>
+                    <div class="skill-box">App Development</div>
+                </div>
+            </div>
+
+
+            <!-- Projects Section -->
+            <div id="projects" class="projects-section">
+                <h1>My<span class="highlight">Projects</span></h1>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="images/sales.png" alt="Project Image">
+                        <div class="content">
+                            <h3>E-commerce analysis to uncover sales trends and patterns.</h3>
+                            <p>Domain/Function: Financial and Sales Analytics</p>
+                            <a href="https://github.com/shreyansh2118/Ecommerce-analytics">See My Work</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="images/gym.png" alt="Project Image">
+                        <div class="content">
+                            <h3>Gym Membership Analytics Dashboard</h3>
+                            <p>Domain/Function: Health Sector Data Analytics</p>
+                            <a href="https://github.com/shreyansh2118/Gym-Membership-analytics">See My Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Experience Section -->
+            <div id="experience" class="experience-section">
+                <!-- <h2>My <span class="highlight">Experience</span></h2> -->
+                <h1>My <span class="highlight">Experience</span></h1>
+                <br>
+                <h3>1. App Developer Intern</h3><br>
+                <p>During my 7 months of tenure as an App Developer Intern, I honed my technical skills in developing
+                    user-centric
+                    applications. This role strengthened my problem-solving abilities and deepened my understanding of
+                    modern app development workflows.</p><br>
+                <ul>
+                    <li>• Collaborated with cross-functional teams to enhance app functionality</li>
+                    <li>• Debugged issues to ensure seamless user experiences</li>
+                    <li>• Developed user-centric applications to meet client needs</li>
+                </ul><br>
+                <h3>2. Data Analyst Intern</h3><br>
+                <p>Currently, I am a Data Analyst Intern, where I leverage data-driven insights to support business
+                    growth. This experience has sharpened my analytical skills and proficiency in tools like Power BI
+                    and Excel, aligning with my passion for data-driven problem-solving.</p><br>
+                <ul>
+                    <li>• Performed data cleaning to ensure data accuracy and consistency</li>
+                    <li>• Crafted DAX queries for advanced data analysis</li>
+                    <li>• Designed interactive dashboards to visualize key performance indicators</li>
+                    <li>• Built a comprehensive dashboard to showcase company revenue from various social media
+                        platforms
+                    </li>
+                    <li>• Provided actionable insights to support strategic decision-making</li>
+                </ul>
+
+            </div>
+
+            <div class="awards-section" id="awards">
+
+                <h1>Awards & <span class="highlight">Certificates</span></h1>
+                <div class="certificates-grid">
+                    <!-- Certificate 1 -->
+                    <div class="certificate-card">
+                        <img src="images/py.PNG" alt="Certificate 1">
+                        <p>Python: Python Developer Immersive Bootcamp</p>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="certificate-card">
+                        <img src="images/nl.PNG" alt="Certificate 2">
+                        <p>Data Analyst: Power BI Advance Dashboard</p>
+                    </div>
+
+                    <!-- Certificate 3 -->
+                    <!-- <div class="certificate-card">
+                        <img src="https://via.placeholder.com/400x300" alt="Certificate 3">
+                        <p>SQL Beginner to Advanced for Data Professionals</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Let’s Connect Section -->
+            <div id="contact" class="contact-section">
+                <h1>Let’s <span class="highlight">Connect</span></h1>
+                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or
+                    opportunities to be part of your visions.</p>
+
+                <div class="contact-cards">
+                    <a href="mailto:shafanasahana2002@gmail.com" class="contact-card">
+                        <img src="https://img.icons8.com/material-outlined/48/00FF6A/filled-message.png" alt="Mail">
+                        <div>
+                            <strong>Mail Me</strong>
+                            shreyansh2118tiwari@gmail.com
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shreyansh-t/" class="contact-card">
+                        <img src="https://img.icons8.com/material-outlined/48/00FF6A/linkedin.png" alt="LinkedIn">
+                        <div>
+                            <strong>LinkedIn</strong>
+                            www.linkedin.com/in/shreyansh-t
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/shreyansh2118" class="contact-card">
+                        <img src="https://img.icons8.com/material-outlined/48/00FF6A/github.png" alt="GitHub">
+                        <div>
+                            <strong>GitHub</strong>
+                            https://github.com/shreyansh2118
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar Menu -->
+        <div class="sidebar">
+
+            <div class="wrapper">
+
+                <a href="#home" class="icon facebook">
+                    <div class="tooltip">
+                        Home
+                    </div>
+                    <span><i class="fas fa-home"></i></span>
+                </a>
+                <a href="#about" class="icon twitter">
+                    <div class="tooltip">
+                        About
+                    </div>
+                    <span><i class="fas fa-user"></i></span>
+                </a>
+                <a href="#projects" class="icon instagram">
+                    <div class="tooltip">
+                        Projects
+                    </div>
+                    <span><i class="fas fa-folder"></i></span>
+                </a>
+                <a href="#experience" class="icon instagram">
+                    <div class="tooltip">
+                        Experience
+                    </div>
+                    <span><i class="fas fa-briefcase"></i></span>
+                </a>
+                <a href="#awards" class="icon instagram">
+                    <div class="tooltip">
+                        Certificates & Awards
+                    </div>
+                    <span><i class="fas fa-trophy"></i></span>
+                </a>
+                <a href="#contact" class="icon instagram">
+                    <div class="tooltip">
+                        Contact
+                    </div>
+                    <span><i class="fas fa-envelope"></i></span>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- <a href="#home" class="menu-item"><i class="fas fa-home"></i></a>
+            <a href="#about" class="menu-item"><i class="fas fa-user"></i></a>
+            <a href="#projects" class="menu-item"><i class="fas fa-folder"></i></a>
+            <a href="#experience" class="menu-item"><i class="fas fa-briefcase"></i></a>
+            <a href="#awards" class="menu-item"><i class="fas fa-trophy"></i></a>
+            <a href="#contact" class="menu-item"><i class="fas fa-envelope"></i></a> -->
