@@ -240,30 +240,38 @@
 
             <script>
                 function showPopup(imageSrc) {
-                    if (window.innerWidth > 768) {
-                        // Show popup on larger screens
-                        const popup = document.getElementById('popup');
-                        const popupImg = document.getElementById('popup-img');
-                        popup.style.display = 'block';
-                        popupImg.src = imageSrc;
+    if (window.innerWidth > 768) {
+        // Show popup on larger screens
+        const popup = document.getElementById('popup');
+        const popupImg = document.getElementById('popup-img');
+        popup.style.display = 'block';
+        popupImg.src = imageSrc;
 
-                        // Add event listener to close the popup when clicking outside the image
-                        popup.addEventListener('click', (event) => {
-                            if (event.target === popup) {
-                                closePopup();
-                            }
-                        });
-                    } else {
-                        // Open the image in the same tab for smaller screens
-                        window.location.href = imageSrc;
-                    }
-                }
+        // Add event listener to close the popup when clicking outside the image
+        popup.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                closePopup();
+            }
+        });
+    } else {
+        // Open the image in the same tab for smaller screens
+        window.location.href = imageSrc;
+    }
+}
 
-                function closePopup() {
-                    const popup = document.getElementById('popup');
-                    popup.style.display = 'none';
-                    popup.removeEventListener('click', closePopup); // Cleanup event listener
-                }
+function closePopup() {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'none';
+    // No need to remove event listener if it's only added when popup is shown
+}
+
+// If PopupLibrary exists, initialize it with mobile behavior
+const myPopupLibrary = new PopupLibrary({
+    mobile: {
+        clickSlide: 'close'  // Automatically close popup on mobile when clicking outside
+    }
+});
+
 
 
             </script>
